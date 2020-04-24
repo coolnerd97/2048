@@ -1,14 +1,14 @@
-@import url(fonts/clear-sans.css);
+@import url(fonts/stylesheet.css);
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: "American Typewriter", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 20px 0; }
 
 .heading:after {
   content: "";
@@ -16,11 +16,11 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: center; }
 
 @-webkit-keyframes move-up {
   0% {
@@ -47,13 +47,13 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 .scores-container {
-  float: right;
-  text-align: right; }
+  float: middle;
+  text-align: center;}
 
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #000000;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -68,11 +68,11 @@ h1.title {
     width: 100%;
     top: 10px;
     left: 0;
-    text-transform: uppercase;
-    font-size: 13px;
+    text-transform: none;
+    font-size: 15px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #FFFFFF; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -80,7 +80,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: rgba(0, 0, 0, 0);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -90,18 +90,18 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "score"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "best"; }
 
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #000000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -111,9 +111,9 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
-  margin-top: 20px;
-  margin-bottom: 30px; }
+  border-bottom: 1px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .container {
   width: 500px;
@@ -149,7 +149,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #616161;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -183,19 +183,19 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #000000;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #FFFFFF;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      background: rgba(170,170,170,0.2);
+      color: #FFFFFF; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -327,68 +327,81 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 55px;
+    color: rgba(0,0,0,0); }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: url('../tile-set/gifs/stanley.webp');
+    background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    /* background: #ede0c8; */
+    background: url('../tile-set/gifs/1.gif');
+    background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    /*color: #f9f6f2;
+    background: #f2b179;*/
+    background: url('../tile-set/quotes/3.webp');
+    background-size: 100%; }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    /* color: #f9f6f2;
+    background: #f59563; */ 
+    background: url('../tile-set/quotes/4.webp');
+    background-size: 100%;}
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    /* color: #f9f6f2;
+    background: #f67c5f; */
+    background: url('../tile-set/quotes/5.webp');
+    background-size: 100%; }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    /* color: #f9f6f2;
+    background: #f65e3b; */
+    background: url('../tile-set/quotes/6.webp');
+    background-size: 100%;}
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
+    /* color: #f9f6f2;
+    background: #edcf72; */
+    background: url('../tile-set/quotes/7.webp');
+    background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
+    /* color: #f9f6f2;
+    background: #edcc61; */
+    background: url('../tile-set/quotes/8.webp');
+    background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
+    /* color: #f9f6f2;
+    background: #edc850; */
+    background: url('../tile-set/quotes/9.webp');
+    background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
+    /* color: #f9f6f2;
+    background: #edc53f; */
+    background: url('../tile-set/quotes/10.webp');
+    background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
+    /* color: #f9f6f2;
+    background: #edc22e; */
+    background: url('../tile-set/quotes/11.webp');
+    background-size: 100%;
+    box-shadow: 0 0 30px 10px rgba(255, 162, 74, 0.29), inset 0 0 0 1px rgba(255, 162, 74, 0.29);}
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+    color: #FFFFFF;
+    background: #000000;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -514,21 +527,20 @@ hr {
 
 .game-intro {
   float: left;
-  line-height: 42px;
+  line-height: 20px;
   margin-bottom: 0; }
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #000000;
   border-radius: 3px;
-  padding: 0 20px;
+  padding: 0 5px 0;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #FFFFFF;
   height: 40px;
   line-height: 42px;
   display: block;
-  text-align: center;
-  float: right; }
+  text-align: center;}
 
 .game-explanation {
   margin-top: 50px; }
@@ -543,7 +555,7 @@ hr {
 
   h1.title {
     font-size: 27px;
-    margin-top: 15px; }
+    margin-top: 5px; }
 
   .container {
     width: 280px;
@@ -582,7 +594,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #616161;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -616,19 +628,19 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #000000;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
+        color: #FFFFFF;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
         .game-container .game-message a.keep-playing-button {
           display: none; }
       .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        background: rgba(170,170,170,0.2);
+        color: #212121; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
