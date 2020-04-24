@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+  <!-- jq import -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- cookie consent css import -->
+  <link rel ="stylesheet" href="style/cookieBubble.min.css"></link>
+  
+  <!-- <style type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"></style> -->
+
+
   <meta charset="utf-8">
+  
+  <!-- <script type="text/javascript">$(document).ready(function(){   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    }); 
+  }); </script> -->
+
   <title>The Office 2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
@@ -17,6 +37,7 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
+  
   <div class="container">
     <div class="heading">
       <h1 class="title" align= "center">the office 2048</h1>
@@ -26,6 +47,16 @@
         <div class="best-container">0</div>
       </div>
     </div>
+
+    <!-- cookie consent js -->
+    <script src="js/cookieBubble.min.js"></script>
+    
+    <!-- cookie consent script init -->
+    <script>
+            (function ($) {
+                    $.cookieBubble();
+            })(jQuery);
+        </script>
 
     <div class="above-game">
       <br>
@@ -92,6 +123,11 @@
     <p>Come hangout with me online (or just report a bug) on <a href="https://www.facebook.com/ravjitsingh97" target="_blank"><img alt="facebook" src="icons/facebook.png" width="18" height="18"/></a> or <a href="https://twitter.com/_ravjitsingh" target="_blank"><img alt="twitter" src="icons/twitter.png" width="18" height="18"/></a>, or just fork it from <a href="https://github.com/ravjitsingh/theoffice2048" target="_blank">Github</a> and make your own version!</p>
 
   </div>
+
+  <!-- <div id="cookieConsent">
+    <div id="closeCookieConsent">x</div>
+    This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+  </div> -->
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>

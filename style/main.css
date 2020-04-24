@@ -330,38 +330,38 @@ hr {
     font-size: 55px;
     color: rgba(0,0,0,0); }
   .tile.tile-2 .tile-inner {
-    background: url('../tile-set/gifs/stanley.webp');
+    background: url('../tile-set/1.webp');
     background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     /* background: #ede0c8; */
-    background: url('../tile-set/gifs/1.gif');
+    background: url('../tile-set/2.webp');
     background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     /*color: #f9f6f2;
     background: #f2b179;*/
-    background: url('../tile-set/quotes/3.webp');
+    background: url('../tile-set/3.webp');
     background-size: 100%; }
   .tile.tile-16 .tile-inner {
     /* color: #f9f6f2;
     background: #f59563; */ 
-    background: url('../tile-set/quotes/4.webp');
+    background: url('../tile-set/4.gif');
     background-size: 100%;}
   .tile.tile-32 .tile-inner {
     /* color: #f9f6f2;
     background: #f67c5f; */
-    background: url('../tile-set/quotes/5.webp');
+    background: url('../tile-set/5.gif');
     background-size: 100%; }
   .tile.tile-64 .tile-inner {
     /* color: #f9f6f2;
     background: #f65e3b; */
-    background: url('../tile-set/quotes/6.webp');
+    background: url('../tile-set/6.webp');
     background-size: 100%;}
   .tile.tile-128 .tile-inner {
     /* color: #f9f6f2;
     background: #edcf72; */
-    background: url('../tile-set/quotes/7.webp');
+    background: url('../tile-set/7.webp');
     background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
@@ -369,7 +369,7 @@ hr {
   .tile.tile-256 .tile-inner {
     /* color: #f9f6f2;
     background: #edcc61; */
-    background: url('../tile-set/quotes/8.webp');
+    background: url('../tile-set/8.gif');
     background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
@@ -377,7 +377,7 @@ hr {
   .tile.tile-512 .tile-inner {
     /* color: #f9f6f2;
     background: #edc850; */
-    background: url('../tile-set/quotes/9.webp');
+    background: url('../tile-set/9.webp');
     background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
@@ -385,7 +385,7 @@ hr {
   .tile.tile-1024 .tile-inner {
     /* color: #f9f6f2;
     background: #edc53f; */
-    background: url('../tile-set/quotes/10.webp');
+    background: url('../tile-set/10.gif');
     background-size: 100%;}
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
@@ -393,7 +393,7 @@ hr {
   .tile.tile-2048 .tile-inner {
     /* color: #f9f6f2;
     background: #edc22e; */
-    background: url('../tile-set/quotes/11.webp');
+    background: url('../tile-set/11.gif');
     background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(255, 162, 74, 0.29), inset 0 0 0 1px rgba(255, 162, 74, 0.29);}
     @media screen and (max-width: 520px) {
@@ -768,3 +768,50 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+/*Cookie Consent Begin
+#cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+Cookie Consent End*/
